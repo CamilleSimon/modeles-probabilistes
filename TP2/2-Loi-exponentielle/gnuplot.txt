@@ -1,0 +1,25 @@
+1/
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP2-EX2.png"
+set xrange [0:1]
+set yrange [0:50]
+set xlabel "y"
+set ylabel "x"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA0.5" t "Lambda=0.5" with linesp lt 1 pt 1, "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA1.0" t "Lambda=1.0" with linesp lt 2 pt 2, "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA1.5" t "Lambda=1.5" with linesp lt 3 pt 3
+
+2/
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP2-EX22.png"
+set xrange [0:100]
+set yrange [0:14000]
+set xlabel "x"
+set ylabel "x occurence"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA0.5.txt" using 1:2 t "Lambda=0.5" with boxes, "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA1.0.txt" using 1:2 t "Lambda=1.0" with boxes, "/home/etudiant/bc153117/workspace/mpi-tp/LAMBDA1.5.txt" using 1:2 t "Lambda=1.5" with boxes
+
+
+
+

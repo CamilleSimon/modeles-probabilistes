@@ -1,0 +1,67 @@
+# Génère les courbes (fiabilité 1)
+# Lambda = 0.5 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA05.png"
+set xrange [0:1000]
+set yrange [0:100]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM10505" t "Lambda=0.5mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM10510" t "Lambda=0.5mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM10515" t "Lambda=0.5mu=1.5" with lines
+
+# Lambda = 1.0 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA10.png"
+set xrange [0:1000]
+set yrange [0:500]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM11005" t "Lambda=1.0mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11010" t "Lambda=1.0mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11015" t "Lambda=1.0mu=1.5" with lines
+
+# Lambda = 1.5 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA15.png"
+set xrange [0:1000]
+set yrange [0:1100]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM11505" t "Lambda=1.5mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11510" t "Lambda=1.5mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11515" t "Lambda=1.5mu=1.5" with lines
+
+# Génère les courbes (fiabilité 100000)
+# Lambda = 0.5 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA05F100000.png"
+set xrange [0:1000]
+set yrange [0:100]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM10505" t "Lambda=0.5mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM10510" t "Lambda=0.5mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM10515" t "Lambda=0.5mu=1.5" with lines
+
+# Lambda = 1.0 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA10F100000.png"
+set xrange [0:1000]
+set yrange [0:500]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM11005" t "Lambda=1.0mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11010" t "Lambda=1.0mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11015" t "Lambda=1.0mu=1.5" with lines
+
+# Lambda = 1.5 & Mu variant dans [0.5, 1.0, 1.5]
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP3-LAMBDA15F100000.png"
+set xrange [0:1000]
+set yrange [0:1100]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/MM11505" t "Lambda=1.5mu=0.5" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11510" t "Lambda=1.5mu=1.0" with lines, "/home/etudiant/bc153117/workspace/mpi-tp/MM11515" t "Lambda=1.5mu=1.5" with lines

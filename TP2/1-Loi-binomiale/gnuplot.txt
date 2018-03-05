@@ -1,0 +1,9 @@
+set terminal png 15
+set encoding utf8
+set output "M1-INFO-MPI-TP2-EX1.png"
+set xrange [0:10]
+set yrange [0:0.4]
+set xlabel "n"
+set ylabel "P(X=p)"
+set key Left reverse
+plot "/home/etudiant/bc153117/workspace/mpi-tp/salutB1" t "n=10 p=0.1 k=11" with linesp lt 1 pt 1, "/home/etudiant/bc153117/workspace/mpi-tp/salutB2" t "n=10 p=0.2 k=11" with linesp lt 2 pt 2, "/home/etudiant/bc153117/workspace/mpi-tp/salutB3" t "n=10 p=0.3 k=11" with linesp lt 3 pt 3, "/home/etudiant/bc153117/workspace/mpi-tp/salutB4" t "n=10 p=0.4 k=11" with linesp lt 4 pt 4, "/home/etudiant/bc153117/workspace/mpi-tp/salutB5" t "n=10 p=0.5 k=11" with linesp lt 5 pt 5, "/home/etudiant/bc153117/workspace/mpi-tp/salutB6" t "n=10 p=0.6 k=11" with linesp lt 6 pt 6, "/home/etudiant/bc153117/workspace/mpi-tp/salutB7" t "n=10 p=0.7 k=11" with linesp lt 7 pt 7, "/home/etudiant/bc153117/workspace/mpi-tp/salutB8" t "n=10 p=0.8 k=11" with linesp lt 8 pt 8, "/home/etudiant/bc153117/workspace/mpi-tp/salutB9" t "n=10 p=0.9 k=11" with linesp lt 9 pt 9

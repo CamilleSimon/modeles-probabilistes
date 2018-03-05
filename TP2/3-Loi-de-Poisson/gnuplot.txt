@@ -1,0 +1,22 @@
+//1/
+
+set terminal png 15
+set encoding utf8
+set output "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/M1-INFO-MPI-TP2-EX3F1.png"
+set xrange [0:1000]
+set yrange [0:1400]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson01F1" t "Lambda=0.1" with linesp lt 1 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson05F1" t "Lambda=0.5" with linesp lt 2 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson10F1" t "Lambda=1.0" with linesp lt 3 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson15F1" t "Lambda=1.5" with linesp lt 4 pt 1
+
+//2/
+set terminal png 15
+set encoding utf8
+set output "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/M1-INFO-MPI-TP2-EX3F100000.png"
+set xrange [0:1000]
+set yrange [0:1400]
+set xlabel "D"
+set ylabel "Custumers"
+set key Left reverse
+plot "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson01F100000" t "Lambda=0.1" with linesp lt 1 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson05F100000" t "Lambda=0.5" with linesp lt 2 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson10F100000" t "Lambda=1.0" with linesp lt 3 pt 1, "/mnt/c/Users/Corentin Ballot/Desktop/mpi-tp/Poisson15F100000" t "Lambda=1.5" with linesp lt 4 pt 1
